@@ -2,4 +2,4 @@ const lala = () => {
     return 'hello';
 }
 
-export default lala;
+module.exports = lala;
