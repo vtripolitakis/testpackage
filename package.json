@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Dummy test package in TypeScript",
   "main": "dist/index.js",
+  "lint-staged": {"*.ts": [ "npm run lint", "npm run build" ]},
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
@@ -19,6 +20,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
