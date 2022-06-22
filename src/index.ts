@@ -1,3 +1,6 @@
-export const vaggelis = () => 'Evangelos';
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+import john from './john';
+import doe from './doe';
 
-export const tripolitakis = () => 'Tripolitakis';
+export { john, doe };
