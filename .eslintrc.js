@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true
   },
-  extends: ['airbnb-base', 'prettier'],
+  extends: ["eslint:recommended", "plugin:react/recommended", 'airbnb-base', 'prettier'],
   parser: 'esprima',
   parserOptions: {
     ecmaVersion: 'latest'

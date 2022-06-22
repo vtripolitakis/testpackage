@@ -1,33 +1,41 @@
 {
-  "name": "vtrtestpackagejs",
+  "name": "vtrtestpackagereactjs",
   "version": "1.0.0",
   "description": "Dummy test package in Javascript",
   "main": "dist/index.js",
   "lint-staged": {
-    "*.js": [
+    "*.jsx": [
       "npm run lint",
       "npm run test"
     ]
   },
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "copyup src/*.js dist",
-    "lint": "eslint src --ext .js,.ts",
+    "build": "NODE_ENV=production babel src/index.jsx --out-dir dist --copy-files",
+    "lint": "eslint src --ext .js,.ts,.jsx",
     "prepare": "husky install",
     "test": "jest"
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
     "copyfiles": "^2.4.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
     "esprima": "^4.0.1",
     "husky": "^8.0.1",
     "jest": "^28.1.1",
     "lint-staged": "^13.0.2",
+    "lodash-webpack-plugin": "^0.11.6",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2"
   },
@@ -35,5 +43,8 @@
     "type": "git",
     "url": "https://github.com/vtripolitakis/testpackage.git"
   },
-  "author": "Evangelos Tripolitakis <vtripolitakis@gmail.com> (https://v.trp.gr/)"
+  "author": "Evangelos Tripolitakis <vtripolitakis@gmail.com> (https://v.trp.gr/)",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
