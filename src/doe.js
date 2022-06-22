@@ -1,2 +1,2 @@
 const doe = () => 'Doe';
-export default doe;
+module.exports = doe;

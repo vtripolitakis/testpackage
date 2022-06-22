@@ -1,2 +1,2 @@
 const john = () => 'John';
-export default john;
+module.exports = john;

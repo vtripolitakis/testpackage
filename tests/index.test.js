@@ -1,6 +1,8 @@
 /* eslint-disable import/extensions */
-// eslint-disable-next-line import/no-unresolved
-import { john, doe } from '../src';
+/* eslint-disable import/no-unresolved */
+const team = require('../dist/index');
+
+const { john, doe } = team;
 
 test('TEST john', () => {
   const testValue = john();
