@@ -1,6 +1,18 @@
 vtrtestpackage
 ==========
-### Dummy Library written in TypeScript
+## Dummy Library written in TypeScript
+
+
+## How to use (locally)
+- run `yarn install`
+- run `yarn build`
+- run `yarn link`
+- on your project's directory run `yarn link vtrtestpackage`
+
+## How to use (refer to this github repo)
+- add the following line on your `package.json` dependencies block
+` "@vtripolitakis/vtrtestpackage": "github:vtripolitakis/vtrtestpackage"`
+- import as usual `import { john, doe } from "@vtripolitakis/vtrtestpackage";`
 
 License
 -------
