@@ -1,3 +1,3 @@
-export const vaggelis = () => 'Vaggelis';
+export const vaggelis = () => 'Evangelos';
 
 export const tripolitakis = () => 'Tripolitakis';

@@ -4,7 +4,7 @@ const { vaggelis, tripolitakis } = lala;
 
 test('TEST vaggelis', () => {
   const testValue = vaggelis();
-  expect(testValue).toBe('Vaggelis');
+  expect(testValue).toBe('Evangelos');
 });
 
 test('TEST tripolitakis', () => {
